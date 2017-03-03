@@ -1,6 +1,6 @@
 # SPRING 2017 PROJECT APP :computer:
 
-This is the repo for my Spring 2017 Project app.
+This is the repo for my Spring 2017 Project app.  Check this readme page in the near future for wireframes and sketches associated with the development of the app.
 
 ## LATEST UPDATE :loudspeaker:
 
