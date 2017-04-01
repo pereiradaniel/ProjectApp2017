@@ -2,12 +2,15 @@
 
 This is the repo for my Spring 2017 Project app.  Check this readme page in the near future for wireframes and sketches associated with the development of the app.
 
-## LATEST UPDATE :loudspeaker:
+## FOLLOW THE BLOG :black_nib:
+
+This project has a [blog][projectBlogLink] you can follow for updates and additional information about this project.
+
+## LATEST UPDATES :loudspeaker:
 
 ### 1/March/2017
 
 Nothing here yet!  Just creating a repo.
-
 
 ## BASIC INFO :information_source:
 
@@ -28,3 +31,4 @@ I am a computer programmer and web developer from Scarborough, Ontario.  My inte
 <!-- Web Links -->
 [blogLink]: <https://medium.com/coding-and-web-development>
 [linkedinlink]: <https://ca.linkedin.com/in/danielpaulpereira>
+[projectBlogLink]: <https://medium.com/spring-2017-project-app-burrito-builder>
