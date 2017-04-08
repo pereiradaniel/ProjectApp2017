@@ -8,9 +8,15 @@ This project has a [blog][projectBlogLink] you can follow for updates and additi
 
 ## LATEST UPDATES :loudspeaker:
 
-### 1/March/2017
+### 8/April/2017
+Progress has been slow on the project this week due to working everyday at my day job and with personal training clients!  However, I have been able to read up on some documentation, previous unit tests and other programming principles that will be implemented immediately.  Although not as much development work got done as I hoped, there has been enough time for me to write a few blogs this week that were helpful to my train of thought.
 
-Nothing here yet!  Just creating a repo.
+> Make sure to follow the blog for this project!  It's as important as the code repo because I am sharpening my project planning/management skill while working several jobs at once.
+
+> [Follow me on Twitter][twitterLink]!
+
+Please share this repo and the blog with up-and-coming web developers that it may help!  Thanks.
+
 
 ## BASIC INFO :information_source:
 
@@ -32,3 +38,4 @@ I am a computer programmer and web developer from Scarborough, Ontario.  My inte
 [blogLink]: <https://medium.com/coding-and-web-development>
 [linkedinlink]: <https://ca.linkedin.com/in/danielpaulpereira>
 [projectBlogLink]: <https://medium.com/spring-2017-project-app-burrito-builder>
+[twitterLink]: <https://twitter.com/pereirawebdev>
