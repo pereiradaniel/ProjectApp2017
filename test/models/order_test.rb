@@ -38,4 +38,9 @@ class OrderTest < ActiveSupport::TestCase
 	test "Total should be an integer" do
 		assert_equal true, orders(:one).total.is_a?(Integer)
 	end
+
+	test "Should be invalid without a delivery address" do
+		orders(:one).delivery_address = nil
+		assert_equal false, orders(:one).valid?
+	end
 end
