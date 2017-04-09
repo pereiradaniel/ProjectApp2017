@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
 	validates :total, :items, presence: true
-	# serialize :items, Array
+	serialize :items, Array 	# This line causes order.items to be an empty array when set to nil
 end

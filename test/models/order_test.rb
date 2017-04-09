@@ -1,16 +1,20 @@
 require 'test_helper'
 # Tests
-# 	- Should be invalid without a total
-# 	- Total should be an integer
-# 	- Should be invalid without an item
+# 	x Should be invalid without a total
+# 	x Total should be an integer
+# 	x Should be invalid without an item
 # 	- An order can have many items
 # 	- Should be invalid without a delivery address
 # 	- Should be invalid without contact information
 
+# NEW TESTS
+
 class OrderTest < ActiveSupport::TestCase
 	test "Should be invalid without an item" do
 		orders(:one).items = nil
-		assert_nil orders(:one).items
+		# Due to serialization, order.item should be an empty array when nil
+		assert_equal true, orders(:one).items == []
+		# The empty array will still be invalid
 		assert_equal false, orders(:one).valid?
 	end
 
