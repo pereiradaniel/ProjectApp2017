@@ -8,11 +8,11 @@ require 'test_helper'
 # 	- Should be invalid without contact information
 
 class OrderTest < ActiveSupport::TestCase
-	# test "should be invalid without an item" do
-	# 	orders.(:one).items = nil
-	# 	assert_nil orders.(:one).items
-	# 	assert_equal false, orders(:one).valid?
-	# end
+	test "Should be invalid without an item" do
+		orders(:one).items = nil
+		assert_nil orders(:one).items
+		assert_equal false, orders(:one).valid?
+	end
 
 	test "Should be invalid without a total" do
 		orders(:one).total = nil

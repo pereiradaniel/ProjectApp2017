@@ -1,5 +1,6 @@
 one:
   total: 100
+  items: Something1 Something2
 
 two:
   total: 200

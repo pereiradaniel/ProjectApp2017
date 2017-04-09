@@ -1,3 +1,4 @@
 class Order < ApplicationRecord
-	validates :total, presence: true
+	validates :total, :items, presence: true
+	# serialize :items, Array
 end
