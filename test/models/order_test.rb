@@ -5,8 +5,8 @@ require 'test_helper'
 # 	x An order can have many items
 # 	x Should be invalid without a total
 # 	x Total should be an integer
-# 	- Should be invalid without a delivery address
-# 	- Should be invalid without contact information
+# 	x Should be invalid without a delivery address
+# 	x Should be invalid without contact information
 
 # NEW TESTS
 
@@ -41,6 +41,11 @@ class OrderTest < ActiveSupport::TestCase
 
 	test "Should be invalid without a delivery address" do
 		orders(:one).delivery_address = nil
+		assert_equal false, orders(:one).valid?
+	end
+
+	test "Should be invalid without contact information" do
+		orders(:one).contact_information = nil
 		assert_equal false, orders(:one).valid?
 	end
 end
