@@ -1,9 +1,10 @@
 require 'test_helper'
 # Tests
+# 	x Should be invalid without an item
+#   x An order can have one item
+# 	x An order can have many items
 # 	x Should be invalid without a total
 # 	x Total should be an integer
-# 	x Should be invalid without an item
-# 	- An order can have many items
 # 	- Should be invalid without a delivery address
 # 	- Should be invalid without contact information
 
@@ -16,6 +17,16 @@ class OrderTest < ActiveSupport::TestCase
 		assert_equal true, orders(:one).items == []
 		# The empty array will still be invalid
 		assert_equal false, orders(:one).valid?
+	end
+
+	test "An order can have one item" do
+		orders(:one).items = ["Item 1"]
+		assert_equal true, orders(:one).items.length == 1
+	end
+
+	test "An order can have many items" do
+		orders(:one).items = ["Item 1", "Item 2"]
+		assert_equal true, orders(:one).items.length > 1
 	end
 
 	test "Should be invalid without a total" do
