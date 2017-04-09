@@ -19,4 +19,8 @@ class OrderTest < ActiveSupport::TestCase
 		assert_nil orders(:one).total
 		assert_equal false, orders(:one).valid?
 	end
+
+	test "Total should be an integer" do
+		assert_equal true, orders(:one).total.is_a?(Integer)
+	end
 end
