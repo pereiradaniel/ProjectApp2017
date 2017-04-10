@@ -1,16 +1,17 @@
 require 'test_helper'
-# Tests
-# 	x Should be invalid without an item
-#   x An order can have one item
-# 	x An order can have many items
-# 	x Should be invalid without a total
-# 	x Total should be an integer
-# 	x Should be invalid without a delivery address
-# 	x Should be invalid without contact information
-
-# NEW TESTS
-
 class OrderTest < ActiveSupport::TestCase
+	# Tests checklist
+	# 	x Should be invalid without an item
+	#   x Should be valid with an item
+	#   x An order can have one item
+	# 	x An order can have many items
+	#   x Order.items should be an array
+	# 	x Should be invalid without a total
+	# 	x Should be valid with a total
+	# 	x Total should be an integer
+	# 	x Should be invalid without a delivery address
+	# 	x Should be invalid without contact information
+
 	test "Should be invalid without an item" do
 		# Sets order items set to nil
 		orders(:one).items = nil
@@ -38,11 +39,23 @@ class OrderTest < ActiveSupport::TestCase
 		assert_equal true, orders(:one).items.length > 1
 	end
 
+	test "Order.items should be an array" do
+		# Sets order items to have two items
+		orders(:one).items = ["Item 1", "Item 2"]
+		assert_equal true, orders(:one).items.is_a?(Array)
+	end
+
 	test "Should be invalid without a total" do
 		# Sets order total to nil
 		orders(:one).total = nil
 		assert_nil orders(:one).total
 		assert_equal false, orders(:one).valid?
+	end
+
+	test "Should be valid with a total" do
+		# Sets order total to 10
+		orders(:one).total = 10
+		assert_equal true, orders(:one).valid?
 	end
 
 	test "Total should be an integer" do
