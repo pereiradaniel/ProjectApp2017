@@ -12,24 +12,34 @@ require 'test_helper'
 
 class OrderTest < ActiveSupport::TestCase
 	test "Should be invalid without an item" do
+		# Sets order items set to nil
 		orders(:one).items = nil
-		# Due to serialization, order.item should be an empty array when nil
+		# Due to serialization, order.item will return an empty array when set to nil
 		assert_equal true, orders(:one).items == []
 		# The empty array will still be invalid
 		assert_equal false, orders(:one).valid?
 	end
 
+	test "Should be valid with an item" do
+		# Sets order items to have one item
+		orders(:one).items = ["Item 1"]
+		assert_equal true, orders(:one).valid?
+	end
+
 	test "An order can have one item" do
+		# Sets order items to have one item
 		orders(:one).items = ["Item 1"]
 		assert_equal true, orders(:one).items.length == 1
 	end
 
 	test "An order can have many items" do
+		# Sets order items to have two items
 		orders(:one).items = ["Item 1", "Item 2"]
 		assert_equal true, orders(:one).items.length > 1
 	end
 
 	test "Should be invalid without a total" do
+		# Sets order total to nil
 		orders(:one).total = nil
 		assert_nil orders(:one).total
 		assert_equal false, orders(:one).valid?

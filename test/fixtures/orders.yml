@@ -1,6 +1,11 @@
 one:
   total: 100
-  items: Something1 Something2
+  items: Item1
+  delivery_address: 555 Fivefivefive Dr
+  contact_information: (555) 555-5555
 
-two:
-  total: 200
+one:
+  total: 100
+  items: Item1 Item2 Item 3
+  delivery_address: 555 Fivefivefive Dr
+  contact_information: (555) 555-5555
