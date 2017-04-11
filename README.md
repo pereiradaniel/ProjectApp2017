@@ -15,6 +15,9 @@ Progress has been slow on the project this week due to working everyday at my da
 
 > [Follow me on Twitter][twitterLink]!
 
+## 11/April/2017
+Finished my initial testing phase today!  Time to start Phase 3 early by adjusting my schedule.
+
 Please share this repo and the blog with up-and-coming web developers that it may help!  Thanks.
 
 
