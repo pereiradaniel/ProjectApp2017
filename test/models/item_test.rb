@@ -10,4 +10,9 @@ class ItemTest < ActiveSupport::TestCase
 		items(:one).item_name = nil
 		assert_equal false, items(:one).valid?
 	end
+
+	test "Should be invalid without a price" do
+		items(:one).price = nil
+		assert_equal false, items(:one).valid?
+	end
 end
