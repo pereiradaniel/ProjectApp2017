@@ -1,5 +1,6 @@
 require 'test_helper'
 class OrderTest < ActiveSupport::TestCase
+
 	# Tests checklist
 	# 	x Should be invalid without an item
 	#   x Should be valid with an item
