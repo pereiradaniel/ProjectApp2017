@@ -2,10 +2,5 @@
 <ul>Menu:
 	<% @items.each do |item| %>
 		<li><%= item.item_name %></li>
-		<li>
-		<%= form_for @order do |f| %>
-			<%= f.submit %>
-		<% end %>
-	</li>
 	<% end %>
 </ul>
