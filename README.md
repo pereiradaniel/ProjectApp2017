@@ -20,6 +20,9 @@ Finished my initial testing phase today!  Time to start Phase 3 early by adjusti
 
 Please share this repo and the blog with up-and-coming web developers that it may help!  Thanks.
 
+## 15/April/2017
+Using RDOC to generate documentation for this project.
+https://rdoc.github.io/rdoc/
 
 ## BASIC INFO :information_source:
 
