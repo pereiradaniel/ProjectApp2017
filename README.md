@@ -24,6 +24,9 @@ Please share this repo and the blog with up-and-coming web developers that it ma
 Using RDOC to generate documentation for this project.
 https://rdoc.github.io/rdoc/
 
+## 16/April/2017
+Templating process is beginning tomorrow with any additional tests being written as needed.
+
 ## BASIC INFO :information_source:
 
 * Ruby 2.3.1
