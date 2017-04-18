@@ -5,8 +5,7 @@ class OrderTest < ActiveSupport::TestCase
 	# 	x Should be invalid without an item
 	#   x Should be valid with an item
 	#   x An order can have one item
-	# 	x An order can have many items
-	#   x Order.items should be an array
+	#   x Order.items should be a string
 	# 	x Should be invalid without a total
 	# 	x Should be valid with a total
 	# 	x Total should be an integer
@@ -16,9 +15,6 @@ class OrderTest < ActiveSupport::TestCase
 	test "Should be invalid without an item" do
 		# Sets order items set to nil
 		orders(:one).items = nil
-		# Due to serialization, order.item will return an empty array when set to nil
-		assert_equal true, orders(:one).items == []
-		# The empty array will still be invalid
 		assert_equal false, orders(:one).valid?
 	end
 
@@ -30,20 +26,14 @@ class OrderTest < ActiveSupport::TestCase
 
 	test "An order can have one item" do
 		# Sets order items to have one item
-		orders(:one).items = ["Item 1"]
-		assert_equal true, orders(:one).items.length == 1
+		orders(:one).items = "Item 1"
+		assert_equal true, orders(:one).items?
 	end
 
-	test "An order can have many items" do
+	test "Order.items should be an string" do
 		# Sets order items to have two items
-		orders(:one).items = ["Item 1", "Item 2"]
-		assert_equal true, orders(:one).items.length > 1
-	end
-
-	test "Order.items should be an array" do
-		# Sets order items to have two items
-		orders(:one).items = ["Item 1", "Item 2"]
-		assert_equal true, orders(:one).items.is_a?(Array)
+		orders(:one).items = "Item 1"
+		assert_equal true, orders(:one).items.is_a?(String)
 	end
 
 	test "Should be invalid without a total" do
