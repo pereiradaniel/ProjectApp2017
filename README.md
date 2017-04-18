@@ -27,6 +27,9 @@ https://rdoc.github.io/rdoc/
 ## 16/April/2017
 Templating process is beginning tomorrow with any additional tests being written as needed.
 
+## 18/April/2017
+Decided to go with more conventional structure for the app, so I quickly rearranged a few things and made sure all my tests were passing.  Tomorrow will be the beginning of a new phase in development, I am going to experiment with different workflow methods that will allow me to build this project in my spare time while I work full time!
+
 ## BASIC INFO :information_source:
 
 * Ruby 2.3.1
