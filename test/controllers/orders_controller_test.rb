@@ -14,4 +14,9 @@ class OrdersControllerTest < ActionController::TestCase
 		get :create
 		assert_response :success
 	end
+
+	# test "should get delete" do
+	# 	get :destroy
+	# 	assert_response :success
+	# end
 end
