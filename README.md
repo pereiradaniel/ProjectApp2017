@@ -11,9 +11,7 @@ This project has a [blog][projectBlogLink] you can follow for updates and additi
 ### 8/April/2017
 Progress has been slow on the project this week due to working everyday at my day job and with personal training clients!  However, I have been able to read up on some documentation, previous unit tests and other programming principles that will be implemented immediately.  Although not as much development work got done as I hoped, there has been enough time for me to write a few blogs this week that were helpful to my train of thought.
 
-> Make sure to follow the blog for this project!  It's as important as the code repo because I am sharpening my project planning/management skill while working several jobs at once.
-
-> [Follow me on Twitter][twitterLink]!
+> Make sure to follow the [blog][projectBlogLink] for this project!  It's as important as the code repo because I am sharpening my project planning/management skill while working several jobs at once.
 
 ## 11/April/2017
 Finished my initial testing phase today!  Time to start Phase 3 early by adjusting my schedule.
@@ -42,6 +40,7 @@ Decided to go with more conventional structure for the app, so I quickly rearran
 I am a computer programmer and web developer from Scarborough, Ontario.  My interest is in the Rails framework and Node, and full-stack multi platform web development.
 
 
+> [Follow me on Twitter][twitterLink]!
 > Follow my [blog][bloglink] for updates on this tutorial and any upcoming tutorial videos.
 > Visit my [LinkedIn][linkedinlink] profile.
 
